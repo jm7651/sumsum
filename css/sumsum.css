@@ -360,6 +360,7 @@ section {
 .sumsum_006_subject_title {
   font-size: 3.2rem;
   width: 45rem;
+  word-break: keep-all;
 }
 .sumsum_006_subject_desc {
   font-size: 1.6rem;
