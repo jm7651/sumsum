@@ -201,7 +201,7 @@ section {
 .box_text_wrapper {
   display: inline-flex;
   width: 20vw;
-  max-width: 440px;
+  max-width: 444px;
   padding: 24px;
   flex-direction: column;
   justify-content: center;
