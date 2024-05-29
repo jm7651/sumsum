@@ -519,6 +519,12 @@ section {
   body {
     min-width: 100%;
   }
+  .sumsum_001_logo {
+    width: 32rem;
+  }
+  .sumsum_001_text_wrap div:nth-child(1) {
+    font-size: 6rem;
+  }
   .sumsum_002_pc_bg {
     height: 58vw;
   }
@@ -533,6 +539,9 @@ section {
   }
   .sumsum_section_image_wrapper {
     gap: 40px;
+  }
+  .sumsum_subject_title {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 450px) {
