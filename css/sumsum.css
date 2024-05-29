@@ -640,6 +640,7 @@ section {
   }
   .inlife_desc {
     font-size: 1.6rem;
+    width: 90%;
   }
   .sumsum_002_text_wrapper {
     display: none;
