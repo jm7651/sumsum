@@ -258,7 +258,7 @@ section {
   transform: translate(-50%, 0);
   width: 60vw;
   max-width: 880px;
-  height: 67.03vw;
+  height: 60.03vw;
   max-height: 1136px;
   background: url(../images/sumsum002_main.png) center center / 100% auto
     no-repeat;
@@ -290,7 +290,7 @@ section {
 .sumsum_section_image_wrapper img {
   width: 14vw;
   min-width: 280px;
-  border-radius: 3.5vw;
+  border-radius: 2.5vw;
   box-shadow: 278px 381px 132px 0px rgba(0, 0, 0, 0),
     178px 244px 121px 0px rgba(0, 0, 0, 0.01),
     100px 137px 102px 0px rgba(0, 0, 0, 0.05),
