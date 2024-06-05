@@ -714,9 +714,7 @@ section {
     padding: 0;
     height: auto;
   }
-  .sumsum_subject {
-    font-size: 1.8rem;
-  }
+
   .sumsum_subject_title {
     font-size: 2.4rem;
   }
@@ -785,7 +783,9 @@ section {
   .sumsum_006_subject_title,
   .sumsum_006_subject_desc {
     width: 100%;
-    text-align: center;
+  }
+  .sumsum_006_subject {
+    font-size: 1.6rem;
   }
   .sumsum_007 {
     width: 100%;
