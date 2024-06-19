@@ -357,7 +357,6 @@ section {
 }
 .sumsum_006_subject_title {
   font-size: 3.2rem;
-  width: 45rem;
   word-break: keep-all;
 }
 .sumsum_006_subject_desc {
@@ -376,11 +375,14 @@ section {
 }
 
 .sumsum_008_p {
-  background: #eff1f3;
+  background: #000;
 }
 .sumsum_008 {
   flex-direction: column;
   gap: 20rem;
+}
+.sumsum_008 .sumsum_subject_title {
+  color: #f5f5f7;
 }
 .sumsum_008 .sumsum_small_section_wrapper {
   display: flex;
