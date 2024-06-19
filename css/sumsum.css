@@ -285,14 +285,13 @@ section {
   gap: 5vw;
 }
 .sumsum_section_image_wrapper img {
-  width: 14vw;
-  min-width: 280px;
+  width: 320px;
   box-shadow: 115px 288px 87px 0px rgba(26, 46, 91, 0),
     74px 184px 79px 0px rgba(26, 46, 91, 0.01),
     41px 104px 67px 0px rgba(26, 46, 91, 0.05),
     18px 46px 50px 0px rgba(26, 46, 91, 0.09),
     5px 12px 27px 0px rgba(26, 46, 91, 0.1);
-  border-radius: 2.45vw;
+  border-radius: 52px;
 }
 .sumsum_003 .sumsum_section_image_wrapper img:nth-child(2) {
   margin-top: 100px;
@@ -731,7 +730,7 @@ section {
   }
   .sumsum_section_image_wrapper img {
     width: 24rem;
-    border-radius: 42px;
+    border-radius: 48px;
   }
   .sumsum_003 .sumsum_section_image_wrapper img:nth-child(2) {
     margin-top: 0px;
