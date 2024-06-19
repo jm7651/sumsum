@@ -140,7 +140,7 @@ section {
 }
 .sumsum_subject_title {
   color: #222;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 130%; /* 62.4px */
 }
@@ -287,11 +287,12 @@ section {
 .sumsum_section_image_wrapper img {
   width: 14vw;
   min-width: 280px;
-  /* box-shadow: 278px 381px 132px 0px rgba(0, 0, 0, 0),
-    178px 244px 121px 0px rgba(0, 0, 0, 0.01),
-    100px 137px 102px 0px rgba(0, 0, 0, 0.05),
-    45px 61px 75px 0px rgba(0, 0, 0, 0.09),
-    11px 15px 41px 0px rgba(0, 0, 0, 0.1); */
+  box-shadow: 115px 288px 87px 0px rgba(26, 46, 91, 0),
+    74px 184px 79px 0px rgba(26, 46, 91, 0.01),
+    41px 104px 67px 0px rgba(26, 46, 91, 0.05),
+    18px 46px 50px 0px rgba(26, 46, 91, 0.09),
+    5px 12px 27px 0px rgba(26, 46, 91, 0.1);
+  border-radius: 2.45vw;
 }
 .sumsum_003 .sumsum_section_image_wrapper img:nth-child(2) {
   margin-top: 100px;
@@ -519,6 +520,9 @@ section {
   font-size: 16px;
   font-weight: 400;
   line-height: 130%; /* 20.8px */
+}
+.breath_video {
+  max-width: 400px;
 }
 @media screen and (max-width: 1728px) {
   body {
@@ -773,10 +777,14 @@ section {
     flex-direction: column;
     gap: 3.2rem;
   }
+  .sumsum_006_subject_title {
+    font-size: 1.8rem;
+  }
   .sumsum_006 .sumsum_small_section_wrapper div:nth-child(2) {
     flex-direction: column;
     border-radius: 32px;
   }
+
   .sumsum_feature_image_wrapper img {
     width: 100%;
   }
@@ -784,8 +792,11 @@ section {
   .sumsum_006_subject_desc {
     width: 100%;
   }
+  .sumsum_006_subject_desc {
+    font-size: 1.4rem;
+  }
   .sumsum_006_subject {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .sumsum_007 {
     width: 100%;
