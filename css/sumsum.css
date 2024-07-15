@@ -254,7 +254,7 @@ section {
   transform: translate(-50%, 0);
   width: 60vw;
   max-width: 880px;
-  padding-top: calc(29 / 60 * 100%);
+  padding-top: calc(31 / 60 * 100%);
 }
 .sumsum_002_pc_bg {
   position: absolute;
