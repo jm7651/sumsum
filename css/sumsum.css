@@ -1,9 +1,9 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 :root {
   --key-color: #0075ff;
-  --skyblue-bg: #7fc8ff;
+  --skyblue-bg: hsl(212, 100%, 75%);
   --gray-800: #292e34;
-  --gray-600: #5b738e;
+  --gray-600: hsl(212, 22%, 60%);
 }
 html,
 body {
@@ -35,7 +35,7 @@ section {
   height: 100vh;
 }
 .sumsum_001_logo_wrap {
-  padding-left: 8vw;
+  padding-left: 2vw;
   padding-top: 6vh;
   position: relative;
   z-index: 2;
@@ -47,7 +47,7 @@ section {
   align-items: center;
   position: absolute;
   width: 100%;
-  bottom: 20vh;
+  bottom: 40vh;
   z-index: 100;
 }
 .sumsum_001_logo {
@@ -58,9 +58,10 @@ section {
 }
 .sumsum_001_text_wrap div:nth-child(1) {
   position: absolute;
-  left: 8vw;
+  left: 2vw;
   margin-top: 4rem;
-  font-size: 8rem;
+  font-size: 9.5vw;
+  letter-spacing: -0.2vw;
 }
 .sumsum_001_desc {
   margin-top: 4rem;
@@ -70,6 +71,9 @@ section {
   color: #fff;
   word-break: keep-all;
   text-align: left;
+}
+#title {
+  opacity: 1;
 }
 .sumsum_001_bg {
   position: absolute;
@@ -172,7 +176,7 @@ section {
 .sumsum_002 {
   width: 100vw;
   height: 100vh;
-  background: var(--skyblue-bg);
+  background: linear-gradient(180deg, #51a2ff 1.64%, #52c0ff 95.06%);
   position: relative;
   overflow: hidden;
 }
@@ -203,7 +207,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1vw;
+  gap: 12px;
   background: #fff;
   border-radius: 20px;
 }
@@ -248,21 +252,12 @@ section {
 .sumsum_002_text_wrapper.swiper {
   display: none;
 }
-.sumsum_002_bg_parents {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 60vw;
-  max-width: 880px;
-  padding-top: calc(31 / 60 * 100%);
-}
 .sumsum_002_pc_bg {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 55%;
   transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
+  width: 45%; /* 원하는 width로 설정 */
   background: url(../images/sumsum002_main.png) center center / 100% auto
     no-repeat;
   object-fit: cover;
@@ -321,9 +316,12 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3vw;
+  font-size: 6vw;
   font-weight: 700;
   color: #fff;
+  width: 100%;
+  padding: 2vw;
+  box-sizing: border-box;
 }
 .sumsum_004 {
   height: 100vh;
@@ -380,7 +378,7 @@ section {
 }
 
 .sumsum_008_p {
-  background: #000;
+  background: #00244d;
 }
 .sumsum_008 {
   flex-direction: column;
@@ -540,6 +538,7 @@ section {
   }
   .sumsum_001_text_wrap div:nth-child(1) {
     font-size: 6rem;
+    left: 2rem;
   }
   .sumsum_002_pc_bg {
     height: 58vw;
@@ -594,19 +593,20 @@ section {
     width: 100%;
   }
   .sumsum_001_text_wrap {
-    padding: 0 1.6rem;
+    padding: 0 2rem;
     bottom: 25%;
+    box-sizing: border-box;
   }
   .sumsum_001_text_wrap div:nth-child(1) {
     padding-top: 4rem;
-    font-size: 9vw;
-    width: 80%;
+    font-size: 14vw;
+    width: 100%;
     border: none;
     text-align: left;
     margin-top: 0;
   }
   .sumsum_001_text_wrap div:nth-child(2) {
-    width: 80%;
+    width: 100%;
     font-size: 1.4rem;
     text-align: center;
     margin: 1rem auto;
@@ -649,8 +649,7 @@ section {
   }
   .sumsum_002_pc_bg {
     width: 160vw;
-    height: 100%;
-    top: 11%;
+    bottom: 0;
   }
   .inlife {
     width: 100vw;

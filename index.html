@@ -30,6 +30,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="css/sumsum.css" />
     <link rel="stylesheet" href="css/loading.css" />
   </head>
@@ -41,8 +43,9 @@
           <div class="sumsum_001_logo"></div>
         </div>
         <div class="sumsum_001_text_wrap">
-          <div class="sumsum_001_desc">
-            Together, Until Your Last Breath<br />‘SUMSUM’ will be with you
+          <div class="sumsum_001_desc" id="title">
+            Together,<br />
+            Until Your Last Breath
           </div>
         </div>
         <div class="sumsum_001_bg">
@@ -157,9 +160,7 @@
         </div>
         <div class="inlife_title">In life</div>
       </div>
-      <div class="sumsum_002_bg_parents">
-        <div class="sumsum_002_pc_bg"></div>
-      </div>
+      <div class="sumsum_002_pc_bg"></div>
     </section>
     <section class="sumsum_section sumsum_003">
       <div class="sumsum_section_wrapper">
@@ -567,5 +568,6 @@
         document.documentElement.style.setProperty("--vh", `${vh}px`);
       });
     </script>
+    <script src="js/gsap.js"></script>
   </body>
 </html>
