@@ -2,8 +2,11 @@
 :root {
   --key-color: #0075ff;
   --skyblue-bg: hsl(212, 100%, 75%);
-  --gray-800: #292e34;
+  --gray-800: #2b2e33;
   --gray-600: hsl(212, 22%, 60%);
+}
+.key_color {
+  color: var(--key-color);
 }
 html,
 body {
@@ -47,12 +50,12 @@ section {
   align-items: center;
   position: absolute;
   width: 100%;
-  bottom: 40vh;
+  bottom: 30vh;
   z-index: 100;
 }
 .sumsum_001_logo {
-  width: 40rem;
-  height: 8.8rem;
+  width: 12em;
+  height: 12rem;
   background: url(../images/sumsum_logo.svg) center center / 100% auto no-repeat;
   object-fit: cover;
 }
@@ -60,7 +63,7 @@ section {
   position: absolute;
   left: 2vw;
   margin-top: 4rem;
-  font-size: 9.5vw;
+  font-size: 7vw;
   letter-spacing: -0.2vw;
 }
 .sumsum_001_desc {
@@ -74,6 +77,11 @@ section {
 }
 #title {
   opacity: 1;
+  /* background: linear-gradient(90deg, #fff 0%, #74e1ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #fff;
 }
 .sumsum_001_bg {
   position: absolute;
