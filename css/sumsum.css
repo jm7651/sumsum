@@ -839,6 +839,9 @@ section {
     width: 100%;
     gap: 6rem;
   }
+  .sumsum_009_container > div:nth-child(2) {
+    margin: 0;
+  }
   .sumsum_900_desc {
     font-size: 1.6rem;
   }
