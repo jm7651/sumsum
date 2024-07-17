@@ -26,3 +26,12 @@ function adjustContainerHeight() {
 
 window.onload = adjustContainerHeight;
 window.onresize = adjustContainerHeight;
+
+function setViewportHeight() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
+// 페이지 로드 시 및 윈도우 리사이즈 시 높이 설정
+window.addEventListener("load", setViewportHeight);
+window.addEventListener("resize", setViewportHeight);

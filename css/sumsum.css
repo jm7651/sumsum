@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 :root {
+  --vh: 1vh;
   --key-color: #0075ff;
   --skyblue-bg: hsl(212, 100%, 75%);
   --gray-800: #2b2e33;
@@ -35,11 +36,11 @@ section {
 }
 .sumsum_001 {
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh) * 100);
 }
 .sumsum_001_logo_wrap {
   padding-left: 2vw;
-  padding-top: 6vh;
+  padding-top: calc(var(--vh) * 6);
   position: relative;
   z-index: 2;
 }
@@ -50,7 +51,7 @@ section {
   align-items: center;
   position: absolute;
   width: 100%;
-  bottom: 30vh;
+  bottom: calc(var(--vh) * 30);
   z-index: 100;
 }
 .sumsum_001_logo {
@@ -90,7 +91,7 @@ section {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   overflow: hidden;
 }
 .sumsum_001_bg video {
@@ -185,7 +186,7 @@ section {
 }
 .sumsum_002 {
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   background: linear-gradient(180deg, #51a2ff 1.64%, #52c0ff 95.06%);
   position: relative;
   overflow: hidden;
@@ -315,7 +316,7 @@ section {
 }
 .sumsum_section {
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   position: relative;
 }
 .sumsum_004 img {
@@ -334,7 +335,7 @@ section {
   box-sizing: border-box;
 }
 .sumsum_004 {
-  height: 100vh;
+  height: calc(var(--vh) * 100);
   overflow: hidden;
 }
 .sumsum_500_desc {
@@ -581,6 +582,10 @@ section {
     box-sizing: border-box;
     z-index: 100;
   }
+  .sumsum_001_text_wrap div:nth-child(1) {
+    left: 0;
+    padding: 0 2rem;
+  }
   .sumsum001_wrap {
     position: absolute;
     width: 100%;
@@ -589,11 +594,7 @@ section {
     box-sizing: border-box;
   }
   .sumsum_001_logo_wrap {
-    width: 20rem;
     padding: 20px;
-  }
-  .sumsum_001_logo {
-    width: 100%;
   }
   .sumsum_001_text_wrap {
     padding: 0 2rem;
@@ -637,7 +638,7 @@ section {
   .sumsum_002 {
     padding: 8rem 0 8rem 2.4rem;
     width: 100%;
-    height: 100vh;
+    height: calc(var(--vh) * 100);
     box-sizing: border-box;
     position: relative;
     z-index: 200;
@@ -767,7 +768,7 @@ section {
   .sumsum_004 img {
     position: absolute;
     left: -50%;
-    height: 100vh;
+    height: calc(var(--vh) * 100);
     width: auto;
   }
   .sumsum_005 .sumsum_section_wrapper {
@@ -847,17 +848,6 @@ section {
   }
   .sumsum_900_desc {
     font-size: 1.6rem;
-  }
-  .sumsum_010 {
-    padding: 0;
-    position: relative;
-    height: 100vh;
-  }
-  .sumsum_010_main {
-    background: url(../images/wind.jpg) 45% center / auto 100%;
-    width: 100%;
-    height: 100vh;
-    opacity: 1;
   }
   .sumsum_010_text_wrapper {
     top: 20%;
