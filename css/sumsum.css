@@ -54,8 +54,10 @@ section {
   z-index: 100;
 }
 .sumsum_001_logo {
-  width: 12em;
-  height: 12rem;
+  width: 5vw;
+  height: 5vw;
+  min-width: 4rem;
+  min-height: 4rem;
   background: url(../images/sumsum_logo.svg) center center / 100% auto no-repeat;
   object-fit: cover;
 }
@@ -63,7 +65,7 @@ section {
   position: absolute;
   left: 2vw;
   margin-top: 4rem;
-  font-size: 7vw;
+  font-size: 6vw;
   letter-spacing: -0.2vw;
 }
 .sumsum_001_desc {
@@ -540,13 +542,6 @@ section {
 @media screen and (max-width: 1728px) {
   body {
     min-width: 100%;
-  }
-  .sumsum_001_logo {
-    width: 32rem;
-  }
-  .sumsum_001_text_wrap div:nth-child(1) {
-    font-size: 6rem;
-    left: 2rem;
   }
   .sumsum_002_pc_bg {
     height: 58vw;
