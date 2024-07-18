@@ -548,7 +548,41 @@ section {
     width: 60%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media (min-width: 1024px) and (orientation: landscape) {
+  .sumsum_002_text_wrapper {
+    top: 5%;
+    width: 60%;
+  }
+  .box_text_wrapper {
+    width: inherit;
+  }
+  .inlife {
+    width: 100%;
+    padding: 4rem;
+    box-sizing: border-box;
+  }
+  .box_title {
+    font-size: 1.6vw;
+  }
+  .box_desc {
+    font-size: 1.2vw;
+  }
+  .sumsum_subject_title {
+    font-size: 3vw;
+  }
+  .sumsum_section_image_wrapper img {
+    width: 20vw;
+    border-radius: 39px;
+  }
+  .sumsum_section_wrapper {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .sumsum_500_desc {
+    width: 320px;
+  }
+}
+@media (max-width: 1024px) and (orientation: portrait) {
   .sumsum_001_logo {
     width: 8vw;
     height: 8vw;
@@ -573,6 +607,9 @@ section {
     width: 100vw;
     padding: 4rem;
     box-sizing: border-box;
+  }
+  .inlife_title {
+    font-size: 10rem;
   }
   .sumsum_section_wrapper {
     flex-direction: column;
