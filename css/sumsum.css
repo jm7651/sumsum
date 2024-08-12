@@ -867,8 +867,8 @@ section {
   }
   .sumsum_004 video {
     position: absolute;
-    left: -100%;
-    height: calc(var(--vh) * 100);
+    left: -50%;
+    height: 100%;
     width: auto;
   }
   .sumsum_005 .sumsum_section_wrapper {
