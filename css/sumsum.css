@@ -316,11 +316,12 @@ section {
 }
 .sumsum_section {
   width: 100vw;
-  height: calc(var(--vh) * 100);
+  height: 100dvh;
   position: relative;
 }
 .sumsum_004 video {
   width: 100%;
+  height: 100%;
 }
 .sumsum_004_title {
   position: absolute;
@@ -703,11 +704,12 @@ section {
   }
   .sumsum_001_text_wrap div:nth-child(1) {
     padding-top: 4rem;
-    font-size: 14vw;
+    font-size: 9vw;
     width: 100%;
     border: none;
     text-align: left;
     margin-top: 0;
+    box-sizing: border-box;
   }
   .sumsum_001_text_wrap div:nth-child(2) {
     width: 100%;
@@ -867,7 +869,7 @@ section {
   }
   .sumsum_004 video {
     position: absolute;
-    left: -50%;
+    left: -100%;
     height: 100%;
     pointer-events: none;
     width: auto;
