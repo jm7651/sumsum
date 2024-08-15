@@ -25,19 +25,18 @@ function adjustContainerHeight() {
   }
 }
 
-// 뷰포트 높이를 CSS 변수로 설정하는 함수
-function setViewportHeight() {
-  const vh = window.innerHeight * 0.01; // 뷰포트 높이의 1%
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-}
-
 // 페이지 로드 시 및 윈도우 리사이즈 시 모든 높이 조정
 window.addEventListener("load", () => {
   adjustContainerHeight();
-  setViewportHeight();
 });
 
 window.addEventListener("resize", () => {
   adjustContainerHeight();
-  setViewportHeight();
 });
+function setHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
+window.addEventListener("resize", setHeight);
+setHeight();
