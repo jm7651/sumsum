@@ -1,10 +1,66 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #0075ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-container p {
+  margin-top: 20px;
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+.contents {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
 :root {
   --vh: 1vh;
   --key-color: #0075ff;
   --skyblue-bg: hsl(212, 100%, 75%);
   --gray-800: #2b2e33;
   --gray-600: hsl(212, 22%, 60%);
+  --font-pretendard: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
 }
 .key_color {
   color: var(--key-color);
@@ -27,9 +83,14 @@ html {
   font-size: 10px;
   color: #262523;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: scroll; /* 스크롤바 항상 표시 */
+  /* 스크롤바로 인한 레이아웃 시프트 방지 */
+  scrollbar-gutter: stable;
 }
 body {
   min-width: 192rem;
+  font-family: var(--font-pretendard);
 }
 section {
   width: 100vw;
@@ -66,13 +127,13 @@ section {
   position: absolute;
   left: 2vw;
   margin-top: 4rem;
-  font-size: 64px;
+  font-size: 4vw;
   letter-spacing: -0.5px;
 }
 .sumsum_001_desc {
   margin-top: 4rem;
-  font-size: 8rem;
-  font-weight: 900;
+  font-size: 6vw;
+  font-weight: 600;
   line-height: 130%;
   color: #fff;
   word-break: keep-all;
@@ -227,9 +288,9 @@ section {
 }
 .box_title {
   color: var(--gray-800);
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 130%; /* 41.6px */
 }
 .box_desc {
@@ -268,10 +329,12 @@ section {
   bottom: 0;
   left: 55%;
   transform: translateX(-50%);
-  width: 45%; /* 원하는 width로 설정 */
-  background: url(../images/sumsum002_main.png) center center / 100% auto
+  width: 45%; /* 기본 너비 */
+  height: 0;
+  padding-bottom: 45%; /* 이미지의 비율을 유지하기 위한 패딩 */
+  background: url(../images/sumsum002_main.png) center bottom / contain
     no-repeat;
-  object-fit: cover;
+  object-fit: contain;
   z-index: 99;
 }
 .sumsum_003 {
@@ -297,6 +360,7 @@ section {
   gap: 5vw;
 }
 .sumsum_section_image_wrapper img {
+  content-visibility: auto;
   width: 320px;
   box-shadow: 115px 288px 87px 0px rgba(26, 46, 91, 0),
     74px 184px 79px 0px rgba(26, 46, 91, 0.01),
@@ -304,7 +368,9 @@ section {
     18px 46px 50px 0px rgba(26, 46, 91, 0.09),
     5px 12px 27px 0px rgba(26, 46, 91, 0.1);
   border-radius: 52px;
+  transition: opacity 0.3s ease;
 }
+
 .sumsum_003 .sumsum_section_image_wrapper img:nth-child(2) {
   margin-top: 100px;
 }
@@ -327,7 +393,7 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 64px;
+  font-size: 2.5vw;
   font-weight: 700;
   color: #fff;
   /* width: 100%; */
@@ -370,7 +436,7 @@ section {
   font-size: 2rem;
 }
 .sumsum_006_subject_title {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   word-break: keep-all;
 }
 .sumsum_006_subject_desc {
@@ -381,15 +447,13 @@ section {
   border-radius: 24px;
   box-shadow: 12px 12px 20px 0px rgba(20, 62, 85, 0.25);
 }
-.sumsum_007 {
-  background: var(--skyblue-bg);
-}
+
 .sumsum_007 .sumsum_subject_title {
-  color: #fff;
+  color: var(--gray-800);
 }
 
 .sumsum_008_p {
-  background: #00244d;
+  background: #000;
 }
 .sumsum_008 {
   flex-direction: column;
@@ -481,15 +545,25 @@ section {
   color: #fff;
   background: var(--key-color);
   font-size: 20px;
-  font-family: "sofia-pro", sans-serif;
   border: none;
   border-radius: 32px;
   padding: 8px 24px;
   cursor: pointer;
-  transition: 0.3s all;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  transform: translateZ(0); /* GPU 가속 활성화 */
+  will-change: transform; /* 성능 향상을 위한 힌트 제공 */
 }
 .sumsum_010_text_wrapper button:hover {
-  background: #7cb9ff;
+  background: #1a8fff; /* 더 밝은 색상으로 변경 */
+  transform: translateY(-2px);
+}
+.sumsum_010_text_wrapper button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+*:focus-visible {
+  outline: 2px solid var(--key-color);
+  outline-offset: 2px;
 }
 .sumsum_011 {
   display: flex;
@@ -592,7 +666,8 @@ section {
   }
   .sumsum_002_pc_bg {
     left: 70%;
-    width: 100%;
+    width: 80%;
+    padding-bottom: 80%;
   }
   .box_text_wrapper {
     width: inherit;
@@ -663,6 +738,33 @@ section {
     width: 100%;
   }
 }
+/* 중간 크기 화면 대응 */
+@media (max-width: 768px) {
+  .sumsum_section_wrapper {
+    padding: 4rem 2rem;
+    gap: 3rem;
+  }
+
+  .sumsum_subject_title {
+    font-size: 2.8rem;
+  }
+
+  .inlife_title {
+    font-size: 8rem;
+  }
+}
+
+/* 태블릿 최적화 */
+@media (min-width: 451px) and (max-width: 1024px) {
+  .sumsum_002_pc_bg {
+    width: 60%;
+    left: 60%;
+  }
+
+  .box_text_wrapper {
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 450px) {
   body {
     min-width: 100%;
@@ -682,10 +784,6 @@ section {
     box-sizing: border-box;
     z-index: 100;
   }
-  .sumsum_001_text_wrap div:nth-child(1) {
-    left: 0;
-    padding: 0 2rem;
-  }
   .sumsum001_wrap {
     position: absolute;
     width: 100%;
@@ -702,6 +800,10 @@ section {
     box-sizing: border-box;
   }
   .sumsum_001_text_wrap div:nth-child(1) {
+    left: 0;
+
+    font-size: 7vw; /* 9vw에서 조정 - 더 나은 가독성을 위해 */
+    padding: 0 1.5rem;
     padding-top: 4rem;
     font-size: 9vw;
     width: 100%;
@@ -727,7 +829,7 @@ section {
     top: 0;
   }
   .scroll-downs {
-    bottom: 8rem;
+    bottom: 12rem;
     margin: 0;
     top: auto;
     left: 50%;
@@ -754,7 +856,9 @@ section {
   }
   .sumsum_002_pc_bg {
     width: 160vw;
+    padding-bottom: 160vw;
     bottom: 0;
+    left: 50%;
   }
   .inlife {
     width: 100vw;
@@ -860,9 +964,9 @@ section {
     overflow: hidden;
   }
   .sumsum_004_title {
-    width: 100%;
+    width: 90%;
     z-index: 102;
-    font-size: 5vw;
+    font-size: 12vw;
     line-height: 130%;
     text-align: center;
   }

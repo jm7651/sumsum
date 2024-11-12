@@ -1,17 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// 메인 타이틀 애니메이션 - 스크롤 트리거 없이 바로 실행
 gsap.from("#title", {
-  scrollTrigger: {
-    trigger: "#title",
-    start: "top 80%",
-    end: "bottom 20%",
-    toggleActions: "play pause resume reset",
-  },
   opacity: 0,
   y: 50,
-  duration: 4,
+  duration: 2,
   ease: "power4.out",
+  delay: 1.5, // 로딩 화면이 사라진 후 시작하도록 딜레이 추가
 });
+
 // sumsum_002_pc_bg 컨테이너 높이를 이미지 비율에 맞춰 조정하는 함수
 function adjustContainerHeight() {
   const container = document.querySelector(".sumsum_002_pc_bg");
@@ -33,6 +30,8 @@ window.addEventListener("load", () => {
 window.addEventListener("resize", () => {
   adjustContainerHeight();
 });
+
+// vh 단위 설정
 function setHeight() {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
