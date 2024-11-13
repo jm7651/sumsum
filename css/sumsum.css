@@ -865,6 +865,7 @@ section {
     padding: 24px;
     box-sizing: border-box;
     flex-direction: column-reverse;
+    align-items: flex-start;
   }
   .inlife_desc {
     font-size: 1.6rem;
