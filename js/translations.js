@@ -91,15 +91,15 @@ window.translations = {
             sumsum_011Bg: "../images/kr/wind_kr.png",
 
             img: {
-                sumsum003:"../images/kr/sumsum003_kr.png",
-                sumsum004: "../images/kr/sumsum004_kr.png",
-                sumsum005_01:"../images/kr/endingnote_001_kr.svg",
-                sumsum005_02:"../images/kr/endingnote_002_kr.svg",
-                sumsum006_feature003:"../images/kr/sumsum_006_feature003_kr.svg",
-                welldying_01:"../images/kr/well-dying_001_kr.png",
-                welldying_02:"../images/kr/well-dying_002_kr.png",
-                sumsumMission1: "../images/kr/mission_001_kr.png",
-                sumsumMission3: "../images/kr/mission_003_kr.png"
+                sumsum003:"/images/kr/sumsum003_kr.png",
+                sumsum004: "/images/kr/sumsum004_kr.png",
+                sumsum005_01:"/images/kr/endingnote_001_kr.svg",
+                sumsum005_02:"/images/kr/endingnote_002_kr.svg",
+                sumsum006_feature003:"/images/kr/sumsum_006_feature003_kr.svg",
+                welldying_01:"/images/kr/well-dying_001_kr.png",
+                welldying_02:"/images/kr/well-dying_002_kr.png",
+                sumsumMission1: "/images/kr/mission_001_kr.png",
+                sumsumMission3: "/images/kr/mission_003_kr.png"
 
             }
         }
@@ -203,18 +203,18 @@ window.translations = {
                     "ing to its completion, we're here to provide comfort and support."
         },
         media: {
-            sumsum_002Bg: "../images/en/sumsum002_main.png",
-            sumsum_011Bg: "../images/en/wind_en.png",
+            sumsum_002Bg: "/images/en/sumsum002_main.png",
+            sumsum_011Bg: "/images/en/wind_en.png",
             img: {
-                sumsum003:"../images/en/sumsum003_en.png",
-                sumsum004: "../images/en/sumsum004_en.png",
-                sumsum005_01:"../images/en/endingnote_001_en.svg",
-                sumsum005_02:"../images/en/endingnote_002_en.svg",
-                sumsum006_feature003:"../images/en/sumsum_006_feature003_en.svg",
-                welldying_01:"../images/en/well-dying_001_en.png",
-                welldying_02:"../images/en/well-dying_002_en.png",
-                sumsumMission1: "../images/en/mission_001_en.png",
-                sumsumMission3: "../images/en/mission_003_en.png"
+                sumsum003:"/images/en/sumsum003_en.png",
+                sumsum004: "/images/en/sumsum004_en.png",
+                sumsum005_01:"/images/en/endingnote_001_en.svg",
+                sumsum005_02:"/images/en/endingnote_002_en.svg",
+                sumsum006_feature003:"/images/en/sumsum_006_feature003_en.svg",
+                welldying_01:"/images/en/well-dying_001_en.png",
+                welldying_02:"/images/en/well-dying_002_en.png",
+                sumsumMission1: "/images/en/mission_001_en.png",
+                sumsumMission3: "/images/en/mission_003_en.png"
             }
         }
     }
